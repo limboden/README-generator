@@ -5,8 +5,33 @@ import fs from 'fs';
 const questions = [
   {
     type: 'input',
-    message: 'what is your name',
-    name: 'name'
+    message: 'what is the name of your project',
+    name: 'nameOfProject'
+  },
+  {
+    type: 'input',
+    message: 'Write a short description for what the project is',
+    name: 'projectDescription'
+  },
+  {
+    type: 'input',
+    message: 'What is required to install your project?',
+    name: 'installationReq'
+  },
+  {
+    type: 'input',
+    message: 'Provide instructions and examples of use of your project.',
+    name: 'usage'
+  },
+  {
+    type: 'input',
+    message: 'List your contributors and your credits:',
+    name: 'contributorsAndCredits'
+  },
+  {
+    type: 'list',
+    message: 'Select your License',
+    name: 'license'
   }
 ];
 
