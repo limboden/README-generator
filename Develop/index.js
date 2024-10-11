@@ -37,7 +37,25 @@ const questions = [
 ];
 
 function handleSubmit(resp) {
-  writeToFile('./generatedREADME.md', `# ${resp.nameOfProject}`);
+  writeToFile('./generatedREADME.md', `
+    # ${resp.nameOfProject}
+
+    ## Description:
+    ${resp.projectDescription}
+
+    ## Installation:
+    ${resp.installationReq}
+
+    ## Usage:
+    ${resp.usage}
+
+    ## Contributors and Credits:
+    ${resp.contributorsAndCredits}
+
+    ## License:
+    ${resp.license}
+    
+    `);
 }
 
 // TODO: Create a function to write README file
