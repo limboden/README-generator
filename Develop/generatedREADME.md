@@ -1,13 +1,13 @@
 
-# test
+# readme
 
 ## Description:
-test
+t
 
 ## Table of Contents:
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation:
@@ -16,8 +16,15 @@ t
 ## Usage:
 t
 
-## Credits:
-t
+## Contributing:
+me
 
 ## License:
 MIT
+
+## Questions:
+- [Github!](http://www.github.com/limboden)
+- [Email me!](mailto:imbodenlu@gmail.com)
+
+
+### Thank you for reading me!

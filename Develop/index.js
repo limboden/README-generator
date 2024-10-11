@@ -24,16 +24,31 @@ const questions = [
     name: 'usage'
   },
   {
-    type: 'input',
-    message: 'List your credits',
-    name: 'credits'
-  },
-  {
     type: 'list',
     message: 'Select your License',
     name: 'license',
     choices: ['MIT', 'CC', 'Apache-2.0', 'Unlicense']
-  }
+  },
+  {
+    type: 'input',
+    message: 'List your contributors',
+    name: 'contributing'
+  },
+  {
+    type: 'input',
+    message: 'List your Tests',
+    name: 'tests'
+  },
+  {
+    type: 'input',
+    message: 'enter your github username',
+    name: 'github'
+  },
+  {
+    type: 'input',
+    message: 'enter your email address',
+    name: 'email'
+  },
 ];
 
 function handleSubmit(resp) {
@@ -46,7 +61,7 @@ ${resp.projectDescription}
 ## Table of Contents:
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation:
@@ -55,11 +70,22 @@ ${resp.installationReq}
 ## Usage:
 ${resp.usage}
 
-## Credits:
-${resp.credits}
+## Contributing:
+${resp.contributing}
 
 ## License:
-${resp.license}`);
+${resp.license}
+
+## Questions:
+- [Github!](http://www.github.com/${resp.github})
+- [Email me!](mailto:${resp.email})
+
+
+### Thank you for reading me!
+`);
+
+
+
 }
 
 // TODO: Create a function to write README file
