@@ -5,7 +5,7 @@ import fs from 'fs';
 const questions = [
   {
     type: 'input',
-    message: 'what is the name of your project',
+    message: 'What is the name of your project',
     name: 'nameOfProject'
   },
   {
@@ -31,22 +31,22 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'List your contributors',
+    message: 'How do people contribute to your Project?',
     name: 'contributing'
   },
   {
     type: 'input',
-    message: 'List your Tests',
+    message: 'What tests do you have?',
     name: 'tests'
   },
   {
     type: 'input',
-    message: 'enter your github username',
+    message: 'Enter your github username',
     name: 'github'
   },
   {
     type: 'input',
-    message: 'enter your email address',
+    message: 'Enter your email address',
     name: 'email'
   },
 ];

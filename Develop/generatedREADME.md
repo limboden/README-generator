@@ -1,7 +1,7 @@
 
-# t
+# README Generator
 
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 
 ## Table of Contents:
@@ -13,28 +13,28 @@
 
 
 ## Description:
-t
+this project asks you a couple of questions and then generates a readme based on your responses
 
 
 ## Installation:
-t
+Node.JS
 
 ## Usage:
-t
+npm i, then, node index.js to begin! you can use this project to generate a readme file for an existing project or you can use this as a starter code!
 
 ## Contributing:
-t
+contact me!
 
 ## Tests:
-t
+none!
 
 ## License:
-This project is under the 'Apache-2.0' License.
-Learn more about this License [here!](https://opensource.org/licenses/Apache-2.0)
+This project is under the 'MIT' License.
+Learn more about this License [here!](https://opensource.org/licenses/MIT)
 
 ## Questions:
-- [Github!](http://www.github.com/t)
-- [Email me!](mailto:t)
+- [Github!](http://www.github.com/limboden)
+- [Email me!](mailto:imbodenlu@gmail.com)
 
 
 ### Thank you for reading me!
