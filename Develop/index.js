@@ -52,17 +52,45 @@ const questions = [
 ];
 
 function handleSubmit(resp) {
+  let licenseBadge = '';
+  let licenseLink = '';
+  switch (resp.license) {
+    case 'MIT':
+      licenseBadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)';
+      licenseLink = 'https://opensource.org/licenses/MIT';
+      break;
+    case 'CC':
+      licenseBadge = '![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)';
+      licenseLink = 'http://creativecommons.org/publicdomain/zero/1.0/';
+      break;
+    case 'Apache-2.0':
+      licenseBadge = '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)';
+      licenseLink = 'https://opensource.org/licenses/Apache-2.0';
+      break;
+    case 'Unlicense':
+      licenseBadge = '![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)';
+      licenseLink = 'http://unlicense.org/';
+      break;
+  }
+
+
   writeToFile('./generatedREADME.md', `
 # ${resp.nameOfProject}
 
-## Description:
-${resp.projectDescription}
+${licenseBadge}
+
 
 ## Table of Contents:
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+
+## Description:
+${resp.projectDescription}
+
 
 ## Installation:
 ${resp.installationReq}
@@ -73,8 +101,12 @@ ${resp.usage}
 ## Contributing:
 ${resp.contributing}
 
+## Tests:
+${resp.tests}
+
 ## License:
-${resp.license}
+This project is under the '${resp.license}' License.
+Learn more about this License [here!](${licenseLink})
 
 ## Questions:
 - [Github!](http://www.github.com/${resp.github})
@@ -83,9 +115,6 @@ ${resp.license}
 
 ### Thank you for reading me!
 `);
-
-
-
 }
 
 // TODO: Create a function to write README file
