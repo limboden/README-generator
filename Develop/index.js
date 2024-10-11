@@ -25,8 +25,8 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'List your contributors and your credits',
-    name: 'contributorsAndCredits'
+    message: 'List your credits',
+    name: 'credits'
   },
   {
     type: 'list',
@@ -43,14 +43,20 @@ function handleSubmit(resp) {
 ## Description:
 ${resp.projectDescription}
 
+## Table of Contents:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
 ## Installation:
 ${resp.installationReq}
 
 ## Usage:
 ${resp.usage}
 
-## Contributors and Credits:
-${resp.contributorsAndCredits}
+## Credits:
+${resp.credits}
 
 ## License:
 ${resp.license}`);
